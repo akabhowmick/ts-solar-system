@@ -20,23 +20,36 @@ Start by filling out the following types. Remember types can and should referenc
 
 ```ts
 export type MassData = {
-  // something
+  massValue: number;
+  massExponent: number;
 };
 
 export type VolData = {
-  // something
+  volumeValue: number;
+  volumeExponenet: number;
 };
 
 export type Planet = {
-  // something
+  id: string;
+  name: string;
+  isPlanet: true;
+  mass: MassData;
+  vol: VolumeData;
+  gravity: number;
+  avgTemp: number;
+  moonsCount: number | undefined;
+  moons: string[] | undefined;
 };
 
 export type Asteroid = {
-  // something
+  name: string;
+  discoveryYear: number;
+  orbitalPeriod: number;
 };
 
 export type AllData = {
-  // something
+  planets: Planet[];
+  asteroids: Asteroid[];
 };
 ```
 
