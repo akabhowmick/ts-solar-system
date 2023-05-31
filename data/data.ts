@@ -4,14 +4,14 @@ export type MassData = {
 };
 
 export type VolData = {
-  volumeValue: number;
-  volumeExponenet: number;
+  volValue: number;
+  volExponent: number;
 };
 
 export type Planet = {
   id: string;
   name: string;
-  isPlanet: true;
+  isPlanet: boolean;
   mass: MassData;
   vol: VolData;
   gravity: number;
